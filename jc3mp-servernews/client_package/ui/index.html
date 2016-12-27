@@ -137,16 +137,16 @@
     </div>
     
     <script>
-      jcmp.Call('toggle_cursor', true);
-      jcmp.ShowCursor();
-
       document.getElementById('continue').addEventListener('click', function() {
           document.getElementById('page').classList.add('hidden');
           jcmp.Call('toggle_cursor', false);
           jcmp.HideCursor();
       });
 
-      $(document).ready(function(){
+      $(document).ready(function() {
+        jcmp.Call('toggle_cursor', true);
+        jcmp.ShowCursor();
+
         var clickEvent = false;
 
         $('#myCarousel').carousel({

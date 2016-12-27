@@ -2,7 +2,18 @@
   "name": "jc3mp-servernews",
   "version": "1.0.1",
   "description": "Features a news system on you're server",
-  "author": "Lukas 'derbl4ck' Berwanger , Myami",
+  "authors": [
+      {
+        "name": "Lukas 'derbl4ck' Berwanger",
+        "email": "lukas.berwanger@googlemail.com",
+        "url": "https://derbl4ck.com"
+      },
+      {
+        "name": "Myami",
+        "email": "quentin.freire@gmail.com",
+        "url": "http://jc3battleroyale.com/"
+      }
+  ],
   "contributors": [],
   "license": "MIT",
   "devDependencies": {
