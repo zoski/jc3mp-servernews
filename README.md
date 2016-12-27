@@ -10,7 +10,7 @@ Features a Server package which gives a news system when player login to a serve
 
 ## TODO
 
-  - make it work
+  - add config files
 
 
 ## License
