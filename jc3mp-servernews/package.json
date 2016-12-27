@@ -1,0 +1,16 @@
+{
+  "name": "jc3mp-servernews",
+  "version": "1.0.0",
+  "authors": [
+      {
+        "name": "Lukas 'derbl4ck' Berwanger",
+        "email": "lukas.berwanger@googlemail.com",
+        "url": "https://derbl4ck.com"
+      },
+      {
+        "name": "Myami",
+        "email": "yushi76240@gmail.com"
+      }
+  ],
+  "jcmp_dependencies": []
+}
