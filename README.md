@@ -1,7 +1,7 @@
 # jc3mp-servernews
 Features a Server package which gives a news system when player login to a server.
 
-![Image of the Package](https://derbl4ck.github.io/jc3mp-servernews.PNG)
+![Image of the Package](https://derbl4ck.github.io/jc3mp-servernews.jpg)
 
 ## Installation
 
@@ -15,4 +15,4 @@ Features a Server package which gives a news system when player login to a serve
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT)
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
