@@ -11,5 +11,5 @@ const ui = new WebUIWindow('jc3mp-servernews', 'package://jc3mp-servernews/ui/in
 ui.autoResize = true;
 
 jcmp.ui.AddEvent('toggle_cursor', (toggle) => {
-    jcmp.localPlayer.controlsEnabled = toggle;
+    //jcmp.localPlayer.controlsEnabled = toggle;
 });
