@@ -1,5 +1,5 @@
 # jc3mp-servernews
-Features a Server package which gives a news system when player login to a server.
+Features a Server package which gives every player that connects to the server a news screen.
 
 ![Image of the Package](https://derbl4ck.github.io/jc3mp-servernews.jpg)
 
