@@ -25,7 +25,7 @@
         bottom: 0;
         text-align: left;
         padding: 10px;
-        background: #2b2b2b;
+        background: #1f1f1f;
         text-shadow: none;
       }
       #myCarousel .list-group {
@@ -37,12 +37,12 @@
       #myCarousel .list-group-item {
         border-radius: 0px;
         cursor: pointer;
-        background-color: #2b2b2b;
-        border: 1px solid #383838;
+        background-color: #1f1f1f;
+        border: 1px solid #2f2f2f;
         color: #fff;
       }
       #myCarousel .list-group .active {
-        background-color: #4e4e4e;
+        background-color: #333333;
       }
       @media (min-width: 992px) {
         #myCarousel { padding-right:33.3333%; }
@@ -53,15 +53,21 @@
         #myCarousel .list-group { display:none; }
       }
       .btn-primary {
-        background-color: #b52424;
-        border-color: #d32f2f;
+        background-color: #FF9800;
+        border-color: #e48b07;
         border-radius: 0px;
         width: 100%;
         height: 100px;
+        -webkit-transition: all 0.3s ease-out 0s;
+           -moz-transition: all 0.3s ease-out 0s;
+            -ms-transition: all 0.3s ease-out 0s;
+             -o-transition: all 0.3s ease-out 0s;
+                transition: all 0.3s ease-out 0s;
       }
       .btn-primary:hover, .btn-primary:visited, .btn-primary:active, .btn-primary:focus {
-        background-color: #9c1c1c !important;
-        border-color: #d32f2f !important;
+        background-color: #ffa200 !important;
+        border-color: #e48b07 !important;
+        font-size: 16px;
       }
     </style>
   </head>
@@ -73,34 +79,34 @@
           <div class='carousel-inner'>
 
             <div class='item active'>
-              <img src='images/battleroyale760.jpg'>
+              <img src='images/JC3_rocky_coast760_400.jpg'>
               <div class='carousel-caption'>
-                <h4><a href='#'>Server open</a></h4>
-                <p>The server is open YEAAAAAAAAAAAAAAAAA </p>
+                <h4><a href='#'>Welcome to this Server!</a></h4>
+                <p>Thank you for passing by, have fun.</p>
               </div>
             </div><!-- End Item -->
 
             <div class='item'>
               <img src='images/jc3.png'>
               <div class='carousel-caption'>
-                <h4><a href='#'>Looks good</a></h4>
-                <p> I think this is good banner ;)</p>
+                <h4><a href='#'>Love Nanos</a></h4>
+                <p>Yeah It's true</p>
               </div>
             </div><!-- End Item -->
 
             <div class='item'>
               <img src='images/hypetrain760.jpg'>
               <div class='carousel-caption'>
-                <h4><a href='#'>Waitingjc3mp</a></h4>
-                <p>Yes We wait and we love that</p>
+                <h4><a href='#'>Cool Servers</a></h4>
+                <p>We'd love to see Awesome Servers soon using this Package.</p>
               </div>
             </div><!-- End Item -->
 
             <div class='item'>
-              <img src='images/JC3_rocky_coast760_400.jpg'>
+              <img src='images/battleroyale760.jpg'>
               <div class='carousel-caption'>
                 <h4><a href='#'>Looks nice</a></h4>
-                <p>This pics looks nice</p>
+                <p>It's just awesome</p>
               </div>
             </div><!-- End Item -->
 
@@ -108,30 +114,20 @@
               <img src='images/maxresdefault760_400.jpg'>
               <div class='carousel-caption'>
                 <h4><a href='#'>Caboum</a></h4>
-                <p>I think something explode behind me</p>
+                <p>Rule No.1: Always look Awesome.</p>
               </div>
             </div><!-- End Item -->
 
           </div><!-- End Carousel Inner -->
 
           <ul class='list-group col-sm-4'>
-            <li data-target='#myCarousel' data-slide-to='0' class='list-group-item active'><h4>ServerOpen</h4></li>
-            <li data-target='#myCarousel' data-slide-to='1' class='list-group-item'><h4>HypeTrain</h4></li>
-            <li data-target='#myCarousel' data-slide-to='2' class='list-group-item'><h4>YOLOOSWAGGY</h4></li>
-            <li data-target='#myCarousel' data-slide-to='3' class='list-group-item'><h4>Somethingappend</h4></li>
-            <li data-target='#myCarousel' data-slide-to='4' class='list-group-item'><h4>KillEveryone</h4></li>
+            <li data-target='#myCarousel' data-slide-to='0' class='list-group-item active'><h4>Welcome to this Server!</h4></li>
+            <li data-target='#myCarousel' data-slide-to='1' class='list-group-item'><h4>Love Nanos</h4></li>
+            <li data-target='#myCarousel' data-slide-to='2' class='list-group-item'><h4>Cool Servers</h4></li>
+            <li data-target='#myCarousel' data-slide-to='3' class='list-group-item'><h4>Looks nice</h4></li>
+            <li data-target='#myCarousel' data-slide-to='4' class='list-group-item'><h4>Caboum</h4></li>
             <button type='button' id='continue' class='btn btn-primary'>Continue to Server</button>
           </ul>
-
-          <!-- Controls -->
-          <div class='carousel-controls'>
-              <a class='left carousel-control' href='#myCarousel' data-slide='prev'>
-                <span class='glyphicon glyphicon-chevron-left'></span>
-              </a>
-              <a class='right carousel-control' href='#myCarousel' data-slide='next'>
-                <span class='glyphicon glyphicon-chevron-right'></span>
-              </a>
-          </div>
 
         </div><!-- End Carousel -->
     </div>
@@ -139,12 +135,12 @@
     <script>
       document.getElementById('continue').addEventListener('click', function() {
           document.getElementById('page').classList.add('hidden');
-          jcmp.CallEvent('toggle_cursor', false);
+          jcmp.CallEvent('toggle_cursor', true);
           jcmp.HideCursor();
       });
 
       $(document).ready(function() {
-        jcmp.CallEvent('toggle_cursor', true);
+        jcmp.CallEvent('toggle_cursor', false);
         jcmp.ShowCursor();
 
         var clickEvent = false;
@@ -157,13 +153,14 @@
             $(this).addClass('active');
         }).on('slid.bs.carousel', function(e) {
           if(!clickEvent) {
-            var count = $('.list-group').children().length - 1;
+            var count = $('.list-group').children().length - 2;
             var current = $('.list-group li.active');
             current.removeClass('active').next().addClass('active');
             var id = parseInt(current.data('slide-to'));
             if(count == id) {
               $('.list-group li').first().addClass('active');
             }
+            $('.btn-primary').removeClass('active');
           }
 
           clickEvent = false;
