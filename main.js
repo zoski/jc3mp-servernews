@@ -6,4 +6,12 @@
  */
 
 'use strict';
+
+var config = require("./config.json");
+var strconfig = JSON.stringify(config);
+
+jcmp.events.AddRemoteCallable("requestservernewsconfig", (player) => {
+    jcmp.events.CallRemote("receiveservernewsconfig", player, strconfig);
+});
+
 console.log('[ServerNews] initialized!');

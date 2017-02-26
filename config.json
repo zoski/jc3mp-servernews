@@ -1,0 +1,29 @@
+{
+	"topper": "<h4>Put a heading in here!</h4>",
+	"newsitems":[
+		{
+			"title": "news",
+			"mediatype": "image",
+			"mediauri": "media/news.jpg",
+			"text": "Good news everyone!<br>The Server News package has had a bit of a revamp.<br>You can define your news items in this config.json now."
+		},
+		{
+			"title": "rules",
+			"mediatype": "image",
+			"mediauri": "media/rules.jpg",
+			"text": "the rules are that these rules are the rules, that is the rules."
+		},
+		{
+			"title": "features",
+			"mediatype": "image",
+			"mediauri": "media/features.jpg",
+			"text": "This is some text about a thing with some stuff"
+		},
+		{
+			"title": "Videos",
+			"mediatype": "video",
+			"mediauri": "media/avws7.webm",
+			"text": "Look! A video! With sound!<br>You need to use open formats, e.g. webm with vorbis codecs.<br>Try to keep filesizes down! No one wants to sit downloading for 5 mins."
+		}
+	]
+}

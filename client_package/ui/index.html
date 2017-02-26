@@ -63,6 +63,8 @@
     </style>
     <script src='jquery-1.9.1.min.js'></script>
     <script src='bootstrap.min.js'></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script>getconfig();</script>
     <style>
       body {
         margin: 0px;
@@ -105,7 +107,7 @@
         #newsSlider { padding-right:33.3333%; }
         #newsSlider .carousel-controls { display:none; }
       }
-      @media (max-width: 600px) {
+      @media (max-width: 400px) {
         .carousel-caption p,
         #newsSlider .list-group { display:none; }
       }
@@ -126,103 +128,37 @@
         border-color: #e48b07 !important;
         font-size: 16px;
       }
+	  .topper {
+	color:#fff;
+	background-color: #FF9800;
+        border-color: #e48b07;
+        border-radius: 0px;
+	        width: 100%;
+        height: 40px;
+		 line-height: 40px;
+		text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+
+	}
     </style>
   </head>
   <body id='page'>
     <div class='container'>
+	 <!-- Wrapper for topper - this is filled from config.json by script.js -->
+	<div id='topper' class='topper'>loading....</div>
         <div id='newsSlider' class='carousel slide' data-ride='carousel'>
 
-          <!-- Wrapper for slides -->
-          <div class='carousel-inner'>
+          <!-- Wrapper for slides - this is filled from config.json by script.js -->
+          <div class='carousel-inner' id = 'newsfeatures'> 
+			loading....
+          </div><!-- End Carousel Inner - this is filled from config.json by script.js -->
 
-            <div class='item active'>
-              <img src='images/JC3_rocky_coast760_400.jpg'>
-              <div class='carousel-caption'>
-                <h4><a href='#'>Welcome to this Server!</a></h4>
-                <p>Thank you for passing by, have fun.</p>
-              </div>
-            </div><!-- End Item -->
-
-            <div class='item'>
-              <img src='images/jc3.png'>
-              <div class='carousel-caption'>
-                <h4><a href='#'>Love Nanos</a></h4>
-                <p>Yeah It's true</p>
-              </div>
-            </div><!-- End Item -->
-
-            <div class='item'>
-              <img src='images/hypetrain760.jpg'>
-              <div class='carousel-caption'>
-                <h4><a href='#'>Cool Servers</a></h4>
-                <p>We'd love to see Awesome Servers soon using this Package.</p>
-              </div>
-            </div><!-- End Item -->
-
-            <div class='item'>
-              <img src='images/battleroyale760.jpg'>
-              <div class='carousel-caption'>
-                <h4><a href='#'>Looks nice</a></h4>
-                <p>It's just awesome</p>
-              </div>
-            </div><!-- End Item -->
-
-            <div class='item'>
-              <img src='images/maxresdefault760_400.jpg'>
-              <div class='carousel-caption'>
-                <h4><a href='#'>Caboum</a></h4>
-                <p>Rule No.1: Always look Awesome.</p>
-              </div>
-            </div><!-- End Item -->
-
-          </div><!-- End Carousel Inner -->
-
-          <ul class='list-group col-sm-4'>
-            <li data-target='#newsSlider' data-slide-to='0' class='list-group-item active'><h4>Welcome to this Server!</h4></li>
-            <li data-target='#newsSlider' data-slide-to='1' class='list-group-item'><h4>Love Nanos</h4></li>
-            <li data-target='#newsSlider' data-slide-to='2' class='list-group-item'><h4>Cool Servers</h4></li>
-            <li data-target='#newsSlider' data-slide-to='3' class='list-group-item'><h4>Looks nice</h4></li>
-            <li data-target='#newsSlider' data-slide-to='4' class='list-group-item'><h4>Caboum</h4></li>
-            <button type='button' id='continue' class='btn btn-primary'>Continue to Server</button>
+          <ul class='list-group col-sm-4' id='headlines'>
+            loading....
           </ul>
 
         </div><!-- End Carousel -->
     </div>
-    
-    <script>
-      document.getElementById('continue').addEventListener('click', function() {
-          document.getElementById('page').classList.add('hidden');
-          jcmp.CallEvent('toggle_cursor', true);
-          jcmp.HideCursor();
-      });
-
-      $(document).ready(function() {
-        jcmp.CallEvent('toggle_cursor', false);
-        jcmp.ShowCursor();
-
-        var clickEvent = false;
-
-        $('#newsSlider').carousel({
-          interval: 4000
-        }).on('click', '.list-group li', function() {
-            clickEvent = true;
-            $('.list-group li').removeClass('active');
-            $(this).addClass('active');
-        }).on('slid.bs.carousel', function(e) {
-          if(!clickEvent) {
-            var count = $('.list-group').children().length - 2;
-            var current = $('.list-group li.active');
-            current.removeClass('active').next().addClass('active');
-            var id = parseInt(current.data('slide-to'));
-            if(count == id) {
-              $('.list-group li').first().addClass('active');
-            }
-            $('.btn-primary').removeClass('active');
-          }
-
-          clickEvent = false;
-        });
-      });
-    </script>
   </body>
 </html>
