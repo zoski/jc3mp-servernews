@@ -58,6 +58,7 @@ function applyconfig(){
 function afterhtml(){	
 //does the click events and deals with toggling news visibility and cursor.
 	var thepage = document.getElementById('page');
+	jcmp.ShowCursor();
 	
 	document.getElementById('continue').addEventListener('click', function() {
 		togglepage(thepage);
@@ -84,10 +85,6 @@ function afterhtml(){
 		}
 
 	}
-
-	$(document).on("mouseenter", function() {
-		jcmp.ShowCursor();
-	});
 		
       $(document).ready(function() {
 
