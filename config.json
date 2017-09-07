@@ -1,26 +1,44 @@
 {
-	"topper": "<h4>Put a heading in here!</h4>",
+	"topper": "<h4>Rail de Cake</h4>",
 	"newsitems":[
 		{
-			"title": "news",
+			"title": "Welcome !",
 			"mediatype": "image",
 			"mediauri": "media/news.jpg",
-			"text": "Good news everyone!<br>The Server News package has had a bit of a revamp.<br>You can define your news items in this config.json now."
+			"text": "Welcome ou Bienvenue<br>"
 		},
 		{
-			"title": "rules",
+			"title": "Règles",
 			"mediatype": "image",
 			"mediauri": "media/rules.jpg",
-			"text": "the rules are that these rules are the rules, that is the rules."
+			"text": "Voici quelques règles a respecter :
+			<ul>
+				<li>Ne fait pas le connard, soit sympa avec les autres joueurs.</li>
+				<li>Ce n'est pas un serveur PvP, laisse tranquille les joueurs en mode passive. Ne détruit pas leurs véhicules</li>
+				<li>Accepte que certain joueurs ne souhaite peut être pas jouer avec toi</li>
+				<li>Amuses toi bien ;-)</li>
+			</ul>
+			<br>
+			Si un joueur est particulièrement agaçant, screenshoot et MP zoski sur le discord de raildecake (https://raildecake.fr/discord)
+			"
 		},
 		{
-			"title": "features",
+			"title": "Rules",
 			"mediatype": "image",
 			"mediauri": "media/features.jpg",
-			"text": "This is some text about a thing with some stuff"
+			"text": "Here is a few rules you must respect:<br>
+			<ul>
+				<li>Don't be a dick, be nice to other player. This is not a PvP Server</li>
+				<li>Leave in peace player into passive, don't destroy their vehicules</li>
+				<li>Accept that other player may don't want to play with you</li>
+				<li>Enjoy your stay here ;-)</li>
+			</ul>
+			<br>
+			If you want to report someone, send a private message to zoski with a screenshoot on our discord : (https://raildecake.fr/discord)
+			"
 		},
 		{
-			"title": "Videos",
+			"title": "Help",
 			"mediatype": "video",
 			"mediauri": "media/avws7.webm",
 			"text": "Look! A video! With sound!<br>You need to use open formats, e.g. webm with vorbis codecs.<br>Try to keep filesizes down! No one wants to sit downloading for 5 mins."
