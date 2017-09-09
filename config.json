@@ -1,47 +1,23 @@
 {
-	"topper": "<h4>Rail de Cake</h4>",
-	"newsitems":[
-		{
-			"title": "Welcome !",
-			"mediatype": "image",
-			"mediauri": "media/news.jpg",
-			"text": "Welcome ou Bienvenue<br>"
-		},
-		{
-			"title": "Règles",
-			"mediatype": "image",
-			"mediauri": "media/rules.jpg",
-			"text": "Voici quelques règles a respecter :
-			<ul>
-				<li>Ne fait pas le connard, soit sympa avec les autres joueurs.</li>
-				<li>Ce n'est pas un serveur PvP, laisse tranquille les joueurs en mode passive. Ne détruit pas leurs véhicules</li>
-				<li>Accepte que certain joueurs ne souhaite peut être pas jouer avec toi</li>
-				<li>Amuses toi bien ;-)</li>
-			</ul>
-			<br>
-			Si un joueur est particulièrement agaçant, screenshoot et MP zoski sur le discord de raildecake (https://raildecake.fr/discord)
-			"
-		},
-		{
-			"title": "Rules",
-			"mediatype": "image",
-			"mediauri": "media/features.jpg",
-			"text": "Here is a few rules you must respect:<br>
-			<ul>
-				<li>Don't be a dick, be nice to other player. This is not a PvP Server</li>
-				<li>Leave in peace player into passive, don't destroy their vehicules</li>
-				<li>Accept that other player may don't want to play with you</li>
-				<li>Enjoy your stay here ;-)</li>
-			</ul>
-			<br>
-			If you want to report someone, send a private message to zoski with a screenshoot on our discord : (https://raildecake.fr/discord)
-			"
-		},
-		{
-			"title": "Help",
-			"mediatype": "video",
-			"mediauri": "media/avws7.webm",
-			"text": "Look! A video! With sound!<br>You need to use open formats, e.g. webm with vorbis codecs.<br>Try to keep filesizes down! No one wants to sit downloading for 5 mins."
-		}
-	]
+  "topper": "<h4>Rail de Cake</h4>",
+  "newsitems": [
+    {
+      "title": "Welcome !",
+      "mediatype": "image",
+      "mediauri": "media/news.jpg",
+      "text": "Welcome ou Bienvenue<br>"
+    },
+    {
+      "title": "Règles",
+      "mediatype": "image",
+      "mediauri": "media/rules.jpg",
+      "text": "Voici quelques règles à respecter :\r\n\t\t\t<ul>\r\n\t\t\t\t<li>Ne fait pas le connard, soit sympa avec les autres joueurs.</li>\r\n\t\t\t\t<li>Ce n'est pas un serveur PvP, laisse tranquille les joueurs en mode passive. Ne détruit pas leurs véhicules</li>\r\n\t\t\t\t<li>Certain joueurs ne souhaite peut être pas jouer avec toi, désolé</li>\r\n\t\t\t\t<li>Amuses toi bien ;-)</li>\r\n\t\t\t</ul>\r\n\t\t\t<br>\r\n\t\t\tSi un joueur est particulièrement agaçant, screenshoot et MP zoski sur le discord de raildecake (https://raildecake.fr/discord)"
+    },
+    {
+      "title": "Rules",
+      "mediatype": "image",
+      "mediauri": "media/rules.jpg",
+      "text": "Here is a few rules you must respect:<br>\r\n\t\t\t<ul>\r\n\t\t\t\t<li>Don't be a dick, be nice to other player. This is not a PvP Server</li>\r\n\t\t\t\t<li>Leave in peace player into passive, don't destroy their vehicules</li>\r\n\t\t\t\t<li>Accept that other player may don't want to play with you</li>\r\n\t\t\t\t<li>Enjoy your stay here ;-)</li>\r\n\t\t\t</ul>\r\n\t\t\t<br>\r\n\t\t\tIf you want to report someone, send a private message to zoski with a screenshoot on our discord (https://raildecake.fr/discord)\t"
+    }
+  ]
 }
